@@ -27,6 +27,8 @@ Before running the project, make sure you have the following requirements instal
   ```shell
   pip install -r requirements.txt
   ``` 
+  
+ **Note:** Make sure firefox is installed, it will be used in this project
    
 ## Configuration
  Change the configuration in the config.yml file.

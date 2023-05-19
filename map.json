@@ -1,0 +1,31 @@
+{
+    "home": {
+        "type": "class name",
+        "value": "landing-headerTitle"
+    },
+    "logged": {
+        "type": "xpath",
+        "value": "//*[@data-testid='chatlist-header']"
+    },
+    "search": {
+        "type": "xpath",
+        "value": "//*[@data-testid='chat-list-search']"
+    },
+    "search_close": {
+        "type": "xpath",
+        "value": "//*[@data-testid='x-alt']"
+    },
+    "contact": {
+        "type": "xpath",
+        "value": "//*[@data-testid='chat-list']"
+    },
+    "last_message": {
+        "type": "xpath",
+        "value": "//*[@data-testid='conversation-panel-messages'][1]//*[contains(@role, 'row')][last()]//*[contains(@dir, 'ltr')][last()]"
+    },
+    "message_input": {
+        "type": "xpath",
+        "value": "//*[@data-testid='conversation-compose-box-input'][1]"
+    }
+
+}

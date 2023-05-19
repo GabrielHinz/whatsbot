@@ -1,0 +1,43 @@
+# Application configurations
+app:
+  # Application name
+  name: whatsbot
+
+  # Version (used for updates)
+  version: 1.0
+
+# Configurations for the operation
+bot:
+  # The name of bot
+  name: "WhatsBot"
+
+  # Main url for Whatsapp
+  url: https://web.whatsapp.com
+
+  # User profile dir
+  profile: .wb-profile
+
+  # Allow headless for webdriver
+  headless: True
+
+  # Marionette port
+  marionette: "2828"
+
+# Configuration for threshold
+threshold:
+  # Default wait time
+  default: 1
+
+  # Page wait time
+  page: 15
+
+  # Auth wait time
+  auth: 45
+
+# Whatsapp mapping file
+map:
+  # Map filename
+  file: map.json
+
+  # Version (used for updates)
+  version: 1.0

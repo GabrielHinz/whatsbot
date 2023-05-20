@@ -22,20 +22,41 @@ Features:
 Dependencies:
 - Selenium WebDriver: Used for browser automation.
 
-Author:
-Gabriel Hinz
+---------------------------------------------------------------
+Credits:
 
-Contact:
-Email: gabriel@legendproject.com.br
+Author: 
+    Gabriel Hinz
 
+Website:
+    https://gabriel.legendproject.com.br
+    
+Contact: 
+    Email: gabriel@legendproject.com.br
 ---------------------------------------------------------------
 """
 from bot import WhatsBot
 
 
-if __name__ == '__main__':
-    # Starting the WhatsBot and authenticating
-    bot = WhatsBot(headless=False)
+def send_messages_to_contact() -> None:
+    """
+    Opens a contact and sends a message in a loop.
+
+    This function opens a contact and repeatedly sends a message to that contact.
+    The function runs in an infinite loop and does not take any arguments or return any values.
+
+    Note: Use with caution as this function will continuously send messages until manually stopped.
+
+    Args:
+        bot (WhatsBot): WhatsBot object 
+
+    Example:
+        - Open a contact named 'John'
+        - Send a message 'Hello, how are you?' to 'John'
+        - Repeat the above step indefinitely until manually stopped
+    """
+    # Starting a new bot object
+    bot = WhatsBot(headless=False)  # set headless to True to hide the webriver
     bot.authenticate()
 
     # Selecting the contact to talk
@@ -43,11 +64,12 @@ if __name__ == '__main__':
 
     # Checking if contact exists
     if bot.open_contact(contact):
-        # Starts a loop for send messages
+        
+        # Infinity loop for send message
         while True:
             message = input("Type your message (Type !quit to exit) ")
 
-            # Finishing the program
+            # quit the program
             if message == '!quit':
                 bot.quit_driver()
                 break
@@ -55,4 +77,18 @@ if __name__ == '__main__':
             # Send the message
             bot.send_messages(message)
     else:
+        # if application does not find the contact
         print("Contact not found")
+
+
+def main():
+    """
+    This code has some examples of how to use the bot.
+
+    """
+    # Starts the first example
+    send_messages_to_contact()
+
+
+if __name__ == '__main__':
+    main()

@@ -26,14 +26,13 @@ Dependencies:
 Credits:
 
 Author: 
-Gabriel Hinz
+    Gabriel Hinz
 
 Website:
-https://gabriel.legendproject.com.br
-
-Contact:
-Email: gabriel@legendproject.com.br
-
+    https://gabriel.legendproject.com.br
+    
+Contact: 
+    Email: gabriel@legendproject.com.br
 ---------------------------------------------------------------
 """
 import os

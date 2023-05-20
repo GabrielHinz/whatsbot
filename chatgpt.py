@@ -53,7 +53,7 @@ def ask_chatgpt(question: str) -> str:
     - answer (str): The response from the language model.
 
     Raises:
-    - requests.exceptions.RequestException: If there is an error making the API request.
+    - Exception: If there is an error making the API request.
 
     Example:
     question = "What is the capital of France?"
@@ -121,7 +121,7 @@ def start_bot() -> None:
             if bot_call_start:
                 question = ask_chatgpt(bot_call_start.group(1))
                 bot.send_messages(question)
-
+                
             # Exiting the program
             elif bot_call_stop:
                 bot.quit_driver()
@@ -135,9 +135,8 @@ def start_bot() -> None:
                     "\n*/help* -> Help commands"
                 )
 
-            # Sleep
+            # A mimir
             time.sleep(2)
-        
     else:
         print("Cant find the contact.")
 

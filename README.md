@@ -39,7 +39,26 @@ Before running the project, make sure you have the following requirements instal
   ```shell
   python example.py
   ```
+ 
+ 2. Wait and write the contact name in terminal
+
+  ```
+  Which contact do you want to open? _My_Contact_Name_
+  ```
+  
   **Note:** The first time you run this program it will authenticate in whatsapp, if it takes too long it may timeout. Adjust the time in the config file if needed.
+  
+## ChatGPT Integration
+1. Open the `chatgpt.py` file and write your API token
+  ```python
+  # Insert your OpenAI api key
+  openai.api_key = "" 
+  ```
+3. Run the `chatgpt.py` file:
+
+  ```shell
+  python chatgpt.py
+  ```
   
 ## Contribution
 If you would like to contribute to this project, please follow the steps below:

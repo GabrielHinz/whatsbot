@@ -2,11 +2,20 @@
 
 This project implements a WhatsApp bot using the Selenium WebDriver. The bot is designed to automate various interactions on the WhatsApp platform, such as authenticating, opening contacts, reading messages, sending messages and ChatGPT integration.
 
+At this moment you can use the bot to:
+
+- Open contacts based on name
+- Read chat messages
+- Send chat messages
+- ChatGPT integration
+
 ## Requirements
 
 Before running the project, make sure you have the following requirements installed:
 
 - Python (version 3.8.7)
+- Selenium - For run webdriver
+- OpenAI - For ChatGPT Integration
 
 ## Installation
 

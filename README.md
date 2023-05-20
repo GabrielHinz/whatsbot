@@ -1,6 +1,6 @@
 # WhatsApp Bot
 
-This project implements a WhatsApp bot using the Selenium WebDriver. The bot is designed to automate various interactions on the WhatsApp platform, such as authenticating, opening contacts, reading messages, and sending messages.
+This project implements a WhatsApp bot using the Selenium WebDriver. The bot is designed to automate various interactions on the WhatsApp platform, such as authenticating, opening contacts, reading messages, sending messages and ChatGPT integration.
 
 ## Requirements
 
